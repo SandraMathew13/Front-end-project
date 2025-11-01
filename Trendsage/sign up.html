@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url('signup1.5.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+        }
+        .cont {
+            position: absolute;
+            color: rgb(255, 253, 253);
+            text-align: center;
+        }
+        .cont h1 {
+            font-size: 3em;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace; 
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 4px rgba(31, 29, 29, 0.7); 
+            padding: 10px 20px; 
+            border-radius: 10px; 
+        }
+        .sub {
+            position: absolute;
+            color: rgba(0, 0, 0, 0.858);
+            text-align: center;
+            font-size: .7em;
+            margin: 0;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .form-em {
+            position: absolute;
+            top: 25%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+        .form-em label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+            color: rgb(18, 17, 17);
+        }
+        .form-em input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            opacity: .7; 
+            background-color: rgba(255, 255, 255, 0.5); 
+            color: black; 
+        }
+        .form-em input[type="text"]:focus {
+            outline: none;
+            background-color: rgb(255, 255, 255); 
+        }
+        .form-user {
+            position: absolute;
+            top: 39%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+        .form-user label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+            color: rgb(13, 13, 13);
+        }
+        .form-user input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            opacity: .7; 
+            background-color: rgba(255, 255, 255, 0.5); 
+            color: black;
+        }
+        .form-user input[type="text"]:focus {
+            outline: none;
+            background-color: rgb(255, 255, 255); /* Full opacity on focus */
+        }
+        .form-pass {
+            position: absolute;
+            top: 52%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+        .form-pass label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+            color: rgb(8, 8, 8);
+        }
+        .form-pass input[type="password"] {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            opacity: .7; 
+            background-color: rgba(255, 255, 255, 0.5); 
+            color: black;
+        }
+        .form-pass input[type="password"]:focus {
+            outline: none;
+            background-color: rgb(255, 255, 255); 
+        }
+        .form-conf {
+            position: absolute;
+            top: 67%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+        .form-conf label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+            color: rgb(8, 8, 8);
+        }
+        .form-conf input[type="password"] {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            opacity: .7; 
+            background-color: rgba(255, 255, 255, 0.5); 
+            color: black; 
+        }
+        .form-conf input[type="password"]:focus {
+            outline: none;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .sub3 {
+            position: absolute;
+            color: rgba(9, 24, 121, 0.858);
+            text-align: center;
+            font-size: .7em;
+            margin: 0;
+            padding: 10px 20px; 
+            cursor: pointer;
+        }
+        .reg {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .reg h1 {
+            font-size: 1em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(31, 29, 29, 0.7); 
+            padding: 10px 50px; 
+            border-radius: 10px; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cont" style="top: 15px; left: 10%; transform: translateX(-50%);">
+        <h1>SIGNUP</h1>
+    </div>
+    <div class="sub" style="top: 50px; left: 9%; transform: translateX(-50%);">
+        <h1>Create an account</h1>
+    </div>
+    <div class="form-em">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email">
+    </div>
+    <div class="form-user">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+    </div>
+    <div class="form-pass">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <div class="form-conf">
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" name="confirm">
+    </div>
+    <div class="sub" style="top: 450px; left: 9%; transform: translateX(-50%);">
+        <h2>Already have an account?</h2>
+    </div>
+    <a href="login.html"><div class="sub3" style="top: 450px; left: 20%; transform: translateX(-50%);">
+        <h2><u>Login?</u></h2></a>
+    </div>
+    <div class="reg" style="top: 540px; left: 86%; transform: translateX(-50%);">
+        <h4>Sandra Mathew 2260437</h4>
+    </div>
+</body>    
+</html>    
